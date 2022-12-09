@@ -1,0 +1,62 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+{{ if $featured_image }}
+  {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+  <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
+    {{ with .Resources.GetMatch "*.css" }}
+ 
+{{ end }}
+    <div class="bg-black-60">
+      {{ $asset := resources.Get "/images/Logo1.png" }}
+{{ $img := $asset.Fit "220x120" }}
+<figure class="image is-3by2">
+  <img class="logo" alt="Yellow Duck" src="{{ $img.RelPermalink }}" />
+</figure> 
+      {{ partial "site-navigation.html" . }}
+      <div class="tc-l pv6 ph3 ph4-ns">
+        {{ if not .Params.omit_header_text }}
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">{{ .Title | default .Site.Title }}</div>
+          {{ with .Params.description  }}
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              {{ . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ else }}
+<div class="top-bar">
+    <div class="col col-md-12 me-md-12 container">
+     <a class="link text" href="#">Login</a>
+      <a class="link text signup" href="#">Signup</a>
+    </div>
+     
+  </div>
+<link rel="stylesheet" href="/css/custom.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+ {{ $asset1 := resources.Get "/images/stack.jpg" }}
+
+ <header class="bnt" style="background-image:url('{{ $asset1.RelPermalink }}')">    
+<div class="row back">
+    <div class="col-md-4">
+{{ $asset := resources.Get "/images/Logo1.png" }}
+{{ $img := $asset.Fit "220x120" }}
+<figure class="image is-3by2">
+  <img class="logo" alt="Yellow Duck" src="{{ $img.RelPermalink }}" />
+</figure>
+    </div>
+    <div class="col-md-8">
+ <div class="nav111">"{{ partial "site-navigation.html" . }}"
+      </div>      
+    </div>
+  </div>
+<div class="container main-banner">
+      <h2 class="botom-baner">For your <b>privacy</b></h2>
+      <p>You’re not imagining it.
+      <p>The ads you see seem to know what you’re thinking.</p>
+      <p>It’s because you are being watched.</p>
+      <button>Learn More</button>
+    </div>
+  </header>
+{{ end }}

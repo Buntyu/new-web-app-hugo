@@ -1,0 +1,137 @@
+{{ define "main" }}
+    <main aria-role="main">
+      <header class="homepage-header">
+      
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
+      </header>
+      <div class="homepage-content">
+       <section id="hero" class="py-5" style="background-color: #fff">
+                <div class="container">
+                    
+                    <div class="d-flex flex-column flex-column-reverse flex-md-row">
+                        <div class="col col-md-6 me-md-6">
+                      
+                            <p class="fs-5">
+                         It’s not because you’re that interesting but your ISP, the apps on your phone,
+those web sites you visit, and even the stores you visit collect and sell your
+information to influence you; what you buy, where you go, how you think.
+Collecting and selling your personal information is how Google, Facebook,
+and many others make money. Lots of money.<p>
+ <p class="fs-5">If that doesn’t bother you, you can stop reading now.</p>
+ <p class="fs-5">If you’re wondering what you can do about it, we’re here to help. You might be
+saying to yourself this is complicated and a hassle. We’ve made it simple.</p>
+                            </p>
+                        </div>
+
+                        <div class="col col-md-6">
+                            <div>
+                               {{ $asset6 := resources.Get "/images/New Project (1).png" }}
+
+                          
+                                <img class="img-fluid rounded mb-4 mb-md-0 blue-color-img" src="{{ $asset6.RelPermalink }}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+<section class="block-4th">  
+<div class="container">
+  <div class="col-md-3 cwdth4">
+    {{ $asset := resources.Get "/images/network.png" }}
+{{ $img := $asset.Fit "160x160" }}
+<figure class="image is-3by2">
+  <img class="img-block-4th" alt="Yellow Duck" src="{{ $img.RelPermalink }}" />
+</figure>
+        <p class="ftr-txt1">Fast, state-of-the-art
+technology</p>  
+      
+    </div>
+    <div class="col-md-3 cwdth4">
+       {{ $asset2 := resources.Get "/images/informatiom.png" }}
+{{ $img2 := $asset2.Fit "160x160" }}
+<figure class="image is-3by2">
+  <img class="img-block-4th" alt="Yellow Duck" src="{{ $img2.RelPermalink }}" />
+</figure>
+        <p class="ftr-txt1">No email or phone
+required</p>  
+     
+    </div>
+    <div class="col-md-3 cwdth4">
+       {{ $asset3 := resources.Get "/images/logs.png" }}
+{{ $img3 := $asset3.Fit "160x160" }}
+<figure class="image is-3by2">
+  <img class="img-block-4th" alt="Yellow Duck" src="{{ $img3.RelPermalink }}" />
+</figure>
+        <p class="ftr-txt1">No logs collected
+</p>  
+    </div>
+    <div class="col-md-3 cwdth4">
+    {{ $asset4 := resources.Get "/images/laptop.png" }}
+{{ $img4 := $asset4.Fit "160x160" }}
+<figure class="image is-3by2">
+  <img class="img-block-4th" alt="Yellow Duck" src="{{ $img4.RelPermalink }}" />
+</figure>
+        <p class="ftr-txt1">Works on Apple,<br/>
+Android, or a compute</p>  
+   </div>
+
+</div>
+
+</section>
+<section class="background-imag">  
+    {{ $asset5 := resources.Get "/images/adobe.jpeg" }}
+  <div class="container frst-con" style="background-image:url('{{ $asset5.RelPermalink }}'); text-align: center;">
+      <div class="container privaccy-made">
+      <h2 class="botom-baner">Privacy <b>made simple</b></h2>
+      <p>Privacy is a right. We’re here to help. Getting started is easy: sign-up and you have an account ID, can play with the interface
+and see what the service looks like. You can even set up a device or two so they are ready to connect. The connection will be
+available after a payment is made. You can make a payment from that account page and connect in minutes.</p>
+</div>
+  </div>
+</section>
+
+<section class="block-price">  
+<div class="container">
+  <div class="col-md-4 cwdth4">
+        {{ $asset11 := resources.Get "/images/5.png" }}
+        {{ $img11 := $asset11.Fit "250x250" }}
+        <figure class="image is-3by2">
+        <img class="img-block-4th" alt="Yellow Duck" src="{{ $img11.RelPermalink }}" />
+        </figure>
+      <p class="ftr-txt1"><b>Basic</b></p>  
+      <p class="ftr-txt1">Lorem ipsum dolor</p>   
+      
+    </div>
+    <div class="col-md-4 cwdth4">
+         {{ $asset12 := resources.Get "/images/8.png" }}
+        {{ $img12 := $asset12.Fit "250x250" }}
+        <figure class="image is-3by2">
+        <img class="img-block-4th" alt="Yellow Duck" src="{{ $img12.RelPermalink }}" />
+        </figure>
+        <p class="ftr-txt1"><b>Plus</b></p>  
+        <p class="ftr-txt1">Lorem ipsum dolor</p>  
+     
+    </div>
+    <div class="col-md-4 cwdth4">
+        {{ $asset13 := resources.Get "/images/15.png" }}
+        {{ $img13 := $asset13.Fit "250x250" }}
+        <figure class="image is-3by2">
+        <img class="img-block-4th" alt="Yellow Duck" src="{{ $img13.RelPermalink }}" />
+        </figure>
+        <p class="ftr-txt1"><b>Family</b></p>  
+        <p class="ftr-txt1">Lorem ipsum dolor</p>  
+    </div>
+  </div>
+</section>
+        {{.Content}}
+      </div>
+      <div>
+        
+      </div>
+    </main>
+{{ end }}
+

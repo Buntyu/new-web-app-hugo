@@ -1,0 +1,89 @@
+header.bnt {
+    background-image: url('/images/stack.jpg');
+    background-size: cover;
+}
+.top-bar {
+    height: 40px !important;
+    background-color: #012d6c !important;
+    width: 100% !important;
+}
+
+p.txt {
+    color: #fff !important;
+    padding: 10px 10px !important;
+    text-align: left;
+}
+
+
+figure.image.is-3by2 {
+    text-align: center;
+}
+.row.back {
+  background-image: ('{{"/images/stack.jpg" | relURL }}') !important;
+    background-size: cover;
+    height: 450px !important;
+    width: 100% !important;
+}
+
+footer.bg-black.bottom-0.w-100.pa3 {
+    background-color: #012d6c !important;
+    height: 350px !important;
+}
+
+.ftr-txt {
+    color: #fff !important;
+    text-align: left !important;
+    font-size: 16px !important;
+    text-decoration: unset !important;
+}
+a {
+    color: var(--bs-link-color);
+    text-decoration: none !important;
+}
+.col-md-4.cwdth1 {
+    text-align: right !important;
+}
+a.ftr-txt {
+    text-decoration: none !important;
+}
+
+h6.btn-text {
+    color: #fff !important;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.row.foter {
+    width: 100% !important;   
+    margin-top: 50px !important;
+}
+
+.col-md-3.cwdth {
+    width: 22%;
+}
+
+.col-md-1.cwdth1 {
+    width: 11% !important;
+}
+
+p.ftr-txt {
+    margin: 16px 0px;
+}
+
+.pvr-text3 {
+    margin: 50px 0px;
+    font-size: 30px;
+    color: #fff !important;
+}
+
+button.bnt {
+    padding: 6px 21px;
+    border-radius: 22px;
+    margin: 60px 16px;
+}
+
+span.pvr-text3 {
+    font-size: 18px;
+}

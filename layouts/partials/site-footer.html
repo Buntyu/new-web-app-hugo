@@ -1,0 +1,48 @@
+<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+
+  <div class="flex justify-between">
+  <div class="container-fluid">
+	<div class="row foter">
+		<div class="col-md-2 cwdthh">
+			{{ $asset1 := resources.Get "/images/logo1.png" }}
+			{{ $img2 := $asset1.Fit "220x120" }}
+<figure class="image is-3by2">
+  <img alt="Yellow Duck" src="{{ $img2.RelPermalink }}" />
+</figure>
+
+		</div>
+		<div class="col-md-1 cwdth1">
+			<h6 class="btn-text">About</h6>
+			<a href="#" class="ftr-txt">Who We Are</a><br>
+			<a href="#" class="ftr-txt">Policies</a><br>
+		</div>
+		<div class="col-md-1 cwdth1">
+		<h6  class="btn-text">Privacy</h6 >
+			<a class="ftr-txt">Inormation </a><br>
+			<a href="#" class="ftr-txt">System Security</a><br>
+			<a href="#" class="ftr-txt">Your Security</a><br>
+
+		</div>
+		<div class="col-md-1 cwdth1">
+			<h6  class="btn-text">Support</h6 >
+				<a href="#" class="ftr-txt">Documentation</a><br>
+				<a href="#" class="ftr-txt">Contact Us</a><br>
+		</div>
+		<div class="col-md-1 cwdth1">
+		<h6 class="btn-text">Blog</h6>
+			
+		
+		</div>
+		<div class="col-md-4 cwdth1">
+		<span class="pvr-text3">For your <b>privacy</b></span><button class="bnt">Get Started</button>
+		</div>
+	</div>
+</div>
+    
+  </div>
+ 
+</footer>
+ <div style="background-color: #fff;">
+  	<p style="text-align: center;padding-top: 10px;padding-bottom: 0px;font-size: 20px;">Copyright info
+  	</p>
+  </div>
