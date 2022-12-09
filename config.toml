@@ -1,0 +1,31 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = ''
+theme = 'ananke'
+
+[menu]
+    [[menu.main]]
+        identifier = "Support"
+        name = "Support"
+        url = "/support/"
+        weight = 3
+    [[menu.main]]
+        identifier = "Privacy"
+        name = "Privacy"
+        url = "/privacy/"
+        weight = 2
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 1
+    [[menu.main]]
+        identifier = "Blog"
+        name = "Blog"
+        url = "/blog/"
+        weight = 4
+ 	
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
