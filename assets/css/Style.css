@@ -1,0 +1,16 @@
+header.bnt {
+    background-image: url('http://localhost:1313/images/stack.jpg');
+    background-size: cover;
+}
+
+header.bnt {
+    background-color: red;
+}
+
+
+
+.container.Topbar {
+    background-color: #012559 !important;
+    height: 40px !important;
+    width: 100% !important;
+}
